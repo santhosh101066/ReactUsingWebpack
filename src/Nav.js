@@ -5,6 +5,7 @@ import Contact from './Contact';
 import About from './About';
 import Routerdata from './Routerdata';
 import ReduxImp from './ReduxImp';
+import ReduxReact from './react-reduct/ReduxReact';
 
 function Nav() {
     return (
@@ -15,6 +16,7 @@ function Nav() {
                     <li><Link to={'contact'}>Contact</Link></li>
                     <li><Link to={'about'}>About</Link></li>
                     <li><Link to={'redux'}>Redux</Link></li>
+                    <li><Link to={'redux-react'}>Redux React</Link></li>
                 </nav>
                 <Routes>
                     <Route index element={<Home />}  ></Route>
@@ -26,6 +28,7 @@ function Nav() {
                     </Route>
                     <Route path='about' element={<About />} ></Route>
                     <Route path='redux' element={<ReduxImp />} ></Route>
+                    <Route path='redux-react' element={<ReduxReact />} ></Route>
                     <Route path='*' element={<div>Not found</div>}></Route>
                 </Routes>
             </BrowserRouter>
