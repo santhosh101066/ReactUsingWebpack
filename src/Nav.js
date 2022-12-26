@@ -5,7 +5,8 @@ import Contact from './Contact';
 import About from './About';
 import Routerdata from './Routerdata';
 import ReduxImp from './ReduxImp';
-import ReduxReact from './react-reduct/ReduxReact';
+import ReduxReact from './react-reduct/reducer/ReduxReact';
+
 
 function Nav() {
     return (
